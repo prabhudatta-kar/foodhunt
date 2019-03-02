@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <!-- bootstrap css -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <!-- main css -->
+ <link rel="stylesheet" href="css/main.css">
+ <!-- google fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+ <!-- font awesome -->
+ <link rel="stylesheet" href="css/login.css">
+ <title>FoodHunt | Login or Sign up</title>
+ <style>
+ </style>
+</head>
+
+<body>
+
+ <div class="container">
+  <div class="row">
+   <div class="col">
+    <img src="img/zomato-logo.png" class="d-block mx-auto" alt="">
+   
+    <div class="form-wrap">
+        <div class="feedback">
+            <p></p>
+            
+          </div><!--.help-text-->
+      <div class="tabs">
+        <h3 class="signup-tab"><a class="active" href="#signup-tab-content">Sign Up</a></h3>
+        <h3 class="login-tab"><a href="#login-tab-content">Login</a></h3>
+      </div><!--.tabs-->
+  
+      <div class="tabs-content">
+        <div id="signup-tab-content" class="active">
+          <form class="signup-form"  id="signupForm" action="" method="post">
+           
+            <input type="text" class="input" id="userNameSignUp" autocomplete="off" placeholder="Username">
+            <input type="password" class="input" id="userPassSignUp" autocomplete="off" placeholder="Password">
+            <input type="button" class="button"  onclick="signup()" value="Sign Up">
+          </form><!--.login-form-->
+          
+        </div><!--.signup-tab-content-->
+  
+        <div id="login-tab-content">
+          <form class="login-form"   id="loginForm" method="post">
+            <input type="text" class="input" id="userNameLogIn" autocomplete="off" placeholder=" Username">
+            <input type="password" class="input" id="userPassLogIn" autocomplete="off" placeholder="Password">
+          
+  
+            <input type="button" class="button"  onclick="login()" value="Login">
+          </form><!--.login-form-->
+          
+        </div><!--.login-tab-content-->
+      </div><!--.tabs-content-->
+    </div><!--.form-wrap-->
+    
+    
+   </div>
+  </div>
+ </div>
+ 
+
+
+
+ <!-- jquery -->
+ <script src="js/jquery-3.3.1.min.js"></script>
+ <!-- bootstrap js -->
+ <script src="js/bootstrap.bundle.min.js"></script>
+ <!-- script js -->
+ <script src="js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+
+  .image{
+      float:left;
+     
+  }
+  .restaurant-name{
+      float:left;
+      
+  }
+  .header{
+      height: fit-content;
+      display: block;
+      min-height: 200px;
+  }
+  .main-div{
+      height: max-content;
+      width: 100%;
+  }
+  .star-rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+  }
+  
+  .star-rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .star-rating label:last-child {
+    position: static;
+  }
+  
+  .star-rating label:nth-child(1) {
+    z-index: 5;
+  }
+  
+  .star-rating label:nth-child(2) {
+    z-index: 4;
+  }
+  
+  .star-rating label:nth-child(3) {
+    z-index: 3;
+  }
+  
+  .star-rating label:nth-child(4) {
+    z-index: 2;
+  }
+  
+  .star-rating label:nth-child(5) {
+    z-index: 1;
+  }
+  
+  .star-rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .star-rating label .icon {
+    float: left;
+    color: transparent;
+  }
+  
+  .star-rating label:last-child .icon {
+    color: rgb(197, 204, 181);
+  }
+  
+  .star-rating:not(:hover) label input:checked ~ .icon,
+  .star-rating:hover label:hover input ~ .icon {
+    color: rgb(29, 158, 12);
+  }
+  
+  .star-rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: rgb(197, 204, 181);
+    text-shadow: 0 0 5px #09f;
+  }

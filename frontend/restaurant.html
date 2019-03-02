@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <!-- bootstrap css -->
+ <link rel="stylesheet" href="css/bootstrap.min.css" id="bootstrap-css">
+ <!-- main css -->
+ <link rel="stylesheet" href="css/main.css">
+ <!-- google fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+ <!-- font awesome -->
+ <link rel="stylesheet" href="css/restaurant.css" >
+
+ 
+ <title>Restaurant</title>
+
+</head>
+
+
+<body>
+        <div class="container">
+                <div class="row">
+                        <div class="col">
+                         <img src="img/zomato-logo.png" class="d-block mx-auto" style=" height: 50%;"alt="">
+                      </div>
+                      
+                    </div>
+                    <hr>
+                    </br>
+                    <div class="row">
+                        <div class="col">
+                            <div class="col-md-12 max-auto" id="main-div">
+                                           
+                                 <div class="main-body">
+
+
+
+                                 </div>
+                                 
+                    
+                            </div>
+                            
+                            
+                            <div class="add-review" style="margin-top:100px;">
+                                <textarea name="Text1" cols="80" rows="5" id="review-text-box"></textarea><br>
+                                <form class="star-rating">
+                                        <label>
+                                          <input type="radio" name="stars" id="star-1" value="1" />
+                                          <span class="icon">★</span>
+                                        </label>
+                                        <label>
+                                          <input type="radio" name="stars" id="star-2" value="2" />
+                                          <span class="icon">★</span>
+                                          <span class="icon">★</span>
+                                        </label>
+                                        <label>
+                                          <input type="radio" name="stars" id="star-3" value="3" />
+                                          <span class="icon">★</span>
+                                          <span class="icon">★</span>
+                                          <span class="icon">★</span>   
+                                        </label>
+                                        <label>
+                                          <input type="radio" name="stars" id="star-4" value="4" />
+                                          <span class="icon">★</span>
+                                          <span class="icon">★</span>
+                                          <span class="icon">★</span>
+                                          <span class="icon">★</span>
+                                        </label>
+                                        <label>
+                                          <input type="radio" name="stars" id="star-5" value="5" />
+                                          <span class="icon">★</span>
+                                          <span class="icon">★</span>
+                                          <span class="icon">★</span>
+                                          <span class="icon">★</span>
+                                          <span class="icon">★</span>
+                                        </label>
+                                      </form><br>
+                                <button type="submit" class="btn redBtn text-capitalize" onclick="addReview()">Add Review</button>
+
+                            </div>
+                            <br>
+                            <h3 style="margin-top:100px;">Reviews</h3>
+                            <div class="main-body" id="review-div">
+
+
+                                </div>
+
+
+                        </div>
+
+                 </div>
+                
+
+
+        </div>
+    
+
+
+ <!-- jquery -->
+ <script src="js/jquery-3.3.1.min.js"></script>
+ <!-- bootstrap js -->
+ <script src="js/bootstrap.bundle.min.js"></script>
+ <!-- script js -->
+ <script src="js/restau.js"></script>
+
+
+</body>
+
+</html>
